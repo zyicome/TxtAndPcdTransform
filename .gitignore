@@ -1,8 +1,8 @@
 build/
 install/
 log/
-txt_to_pcd/data/txt/*.txt
-txt_to_pcd/data/pcd/*.pcd
+data/txt/*.txt
+data/pcd/*.pcd
 .vscode/
 .git/
 .cache/
