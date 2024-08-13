@@ -21,6 +21,7 @@ colcon build
 cd TxtAndPcdTransform
 #创建一个目录保存txt和pcd文件，可根据自己的目录修改
 cd txt_to_pcd && mkdir data && cd data && mkdir txt && mkdir pcd && cd ../
+. install/setup.bash
 ros2 launch txt_to_pcd txt_to_pcd.launch.py txt_path:=./txt_to_pcd/data/txt/yourpoints.txt pcd_path:=./txt_to_pcd/data/pcd/yourpoints.pcd mode:=0
 ```
 
