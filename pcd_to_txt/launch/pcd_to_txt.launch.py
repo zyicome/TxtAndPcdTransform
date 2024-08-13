@@ -24,13 +24,13 @@ def generate_launch_description():
     declare_mode_cmd = DeclareLaunchArgument(
         'mode',
         default_value="0",
-        description='Used mode to read from txt'
+        description='Used mode to read from pcd'
     )
 
-    txt_to_pcd_node =Node(
-        package='txt_to_pcd',
-        executable='txt_to_pcd_node',
-        name='txt_to_pcd_node',
+    pcd_to_txt_node =Node(
+        package='pcd_to_txt',
+        executable='pcd_to_txt_node',
+        name='pcd_to_txt_node',
         output='both',
         parameters=[
             {'txt_path': txt_path},
@@ -42,4 +42,4 @@ def generate_launch_description():
         declare_txt_path_cmd,
         declare_pcd_path_cmd,
         declare_mode_cmd,
-        txt_to_pcd_node])
+        pcd_to_txt_node])
