@@ -63,6 +63,7 @@ bool TxtToPcd::txt_to_pcd(std::string txt_path, std::string pcd_path, int mode)
     else    // 错误处理
     {
         RCLCPP_ERROR(this->get_logger(), "无法打开文件");
+        RCLCPP_INFO(this->get_logger(), txt_path.c_str());
         return false;
     }   
 }
